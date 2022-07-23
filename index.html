@@ -1,0 +1,209 @@
+<html>
+<head>
+<style>
+.dropdown-content {
+position:relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display:none ;
+position:absolute ;
+background-color:#f9f9f9 ;
+min width: 160px ;
+box - shadow: 0px 8px 16px 0px rgba(0,0,0,0,2) ;
+padding: 12px 16px;
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+</style>
+<title>FLIPKART</title>
+</head>
+<body bgcolor="#F1F3F6">
+<table border="0" width="100%" bgcolor="#2874F0">
+<tr>
+<td align="right"><a href="https://www.flipkart.com/"><img src="capture20.JPG" height="60" width="70%"></a></align></td>
+<td align="center"><input type="text" placeholder="search for products,brands and more" style="width:500px;height:35px"></align>
+<input type="button" value="search" style="width:95px;height:35px">
+</td>
+<td align="center"><font color="white"><a href="https://www.flipkart.com/account/login?ret=%2Faccount%2Forders&fromMyOrdersPage=true" style="text-decoration:none;color:white">login & Sign up</a></align></font></td>
+<td align="center"><font color="white">More</align></font></td>
+<td align="center"><a href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"><img src="capture6.JPG"></a></align></td>
+</tr> 
+</table>
+<br>
+<table border="0" width="100%">
+<tr>
+<th><a href="https://www.flipkart.com/search?q=electronics" style="text-decoration:none;color:black">
+<div class="dropdown">
+<span><b>electronics</b></span>
+<div class="dropdown-content">
+<p><a href="https://www.flipkart.com/search?q=mobiles" style="text-decoration:none;color:black">mobile</a></p>
+<p>laptop</p>
+<p>computers</p>
+<p>fridge</p>
+<p>oven</p>
+<p>cameras & accesories</p>
+<p>computer perpheral</p>
+<p>gaming</p>
+<p>tablets</p>
+</div>
+</div>
+</a>
+</th>
+<th><a href="https://www.flipkart.com/search?q=Tv%20%26%20Appliances" style="text-decoration:none;color:black"><b>Tv & Appliances</b></a></th>
+<th><a href="https://www.flipkart.com/search?q=Toys%20and%20Baby%20care" style="text-decoration:none;color:black"><b>Toys and Baby care</b></a></th>
+<th><a href="https://www.flipkart.com/search?q=Sports%20fitness" style="text-decoration:none;color:black"><b>Sports fitness</b></a></th>
+<th><a href="https://www.flipkart.com/search?q=Kids" style="text-decoration:none;color:black"><b>Kids</b></a></th>
+<th><a href="https://www.flipkart.com/offers-store?otracker=nmenu_offer-zone" style="text-decoration:none;color:black"><b>Offer zone</b></a></th>
+</tr>
+</table>
+<BR><BR>
+<table border="0" width="100%">
+<tr>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 2s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Capture11.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Capture12.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Capture13.JPG" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</tr>
+</table>
+<br><br>
+<table border="0" width="100%">
+<tr>
+<td colspan="5"><h2>IPHONES LIST</h2></td>
+<tr>
+<th><img src="IPHONE13PRO.JPG" width="55%"></th>
+<th><img src="iphone13.JPG" width="55%"></th>
+<th><img src="iphone12.JPG" width="55%"></th>
+<th><img src="iphone11.JPG" width="55%"></th>
+<th><img src="IPHONEX.JPG" width="55%"></th>
+</tr>
+<tr>
+<th><a href="https://www.flipkart.com/apple-iphone-13-pro-silver-1-tb/p/itm14c527352e711?pid=MOBG6VF5ADR3Y9VY&lid=LSTMOBG6VF5ADR3Y9VYKZ1TQT&marketplace=FLIPKART&q=iphone+13+pro&store=tyy%2F4io&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_3_9_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_3_9_na_na_ps&fm=search-autosuggest&iid=6e8460d0-6f45-47fc-9e3c-d130e2ab004a.MOBG6VF5ADR3Y9VY.SEARCH&ppt=sp&ppn=sp&ssid=b7pwm9nxhc0000001658328364579&qH=d710b99387b45d01" style="text-decoration:none;color:black">IPHON3 13 PRO</th>
+<th><a href="https://www.flipkart.com/search?q=iphone+13" style="text-decoration:none;color:black">IPHON3 13</a></th>
+<th><a href="https://www.flipkart.com/search?q=iphone+12&otracker=AS_Query_HistoryAutoSuggest_3_0&otracker1=AS_Query_HistoryAutoSuggest_3_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=3&as-type=HISTORY" style="text-decoration:none;color:black">IPHON3 12</a></th>
+<th><a href="https://www.flipkart.com/search?q=iphone%2011&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" style="text-decoration:none;color:black">IPHON3 11 </a></th>
+<th><a href="https://www.flipkart.com/search?q=iphone%2010&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" style="text-decoration:none;color:black">IPHON3 10 </a></th>
+</tr>
+<tr>
+<th>Price: <font color="green">1,69,900/-</font></th>
+<th>Price: <font color="green">74,299/-</font></th>
+<th>Price: <font color="green">65,499/-</font></th>
+<th>Price: <font color="green">47,199/-</font></th>
+<th>Price: <font color="green">1,06,900/-</font></th>
+</tr>
+</body>
+</html>
